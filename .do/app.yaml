@@ -1,0 +1,13 @@
+name: sample-websocket
+services:
+- environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: digitalocean/sample-websocket
+  http_port: 8080
+  name: sample-websocket
+  routes:
+  - path: /
+  run_command: npm start
+  source_dir: /
