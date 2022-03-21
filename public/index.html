@@ -47,7 +47,10 @@
         const heapTotal = document.getElementById('heapTotal');
         const heapUsed = document.getElementById('heapUsed');
         const external = document.getElementById('external');
-        const ws = new WebSocket(`wss://${location.host}`);
+        
+        // will not use tls if the connection is not made over https
+        const protocol = window.location.protocol.includes('https') ? 'wss': 'ws'
+        const ws = new WebSocket(`${protocol}://${location.host}`);
 
         ws.onmessage = function(event) {
           const data = JSON.parse(event.data);
