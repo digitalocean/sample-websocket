@@ -1,3 +1,6 @@
+> ⚠️ **This repository is archived and kept for reference purposes only.**  
+> It is no longer maintained and will not receive updates or support.
+
 Websockets allow you to expose real-time data from your application. Websockets operate as a bidirectional communications channel using HTTP through a TCP connection. Examples of software that use websockets includes financial tickers, live updates for sports scores, location-based apps, and collaborative text editors. In all of these use cases, it's useful for the client and server to have an open connection, over which they freely communicate in real time.
 
 In this tutorial, you will build a Node.js app using Express and make the app available to internet traffic via Node's websocket package.
